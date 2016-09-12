@@ -1,0 +1,18 @@
+--- a/config.inc.php
++++ b/config.inc.php
+@@ -185,7 +185,7 @@
+  *  for security reasons (see http://itsecuritysolutions.org/2012-08-13-TestLink-1.9.3-multiple-vulnerabilities/)
+  *  put it out of reach via web or configure access denied.
+  */
+-$tlCfg->log_path = '/var/testlink/logs/'; /* unix example */
++$tlCfg->log_path = '/var/log/testlink'; /* unix example */
+ 
+ 
+ /**
+@@ -1755,4 +1755,4 @@
+ $tlCfg->gui->title_separator_2 =  $tlCfg->gui_title_separator_2;
+ $tlCfg->gui->role_separator_open =  $tlCfg->gui_separator_open;
+ $tlCfg->gui->role_separator_close = $tlCfg->gui_separator_close;
+-// ----- END OF FILE --------------------------------------------------------------------
+\ No newline at end of file
++// ----- END OF FILE --------------------------------------------------------------------

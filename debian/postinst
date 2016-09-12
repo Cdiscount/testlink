@@ -1,0 +1,26 @@
+#!/bin/sh
+
+set -e
+
+yellow=$(tput setaf 3)
+normal=$(tput sgr0)
+
+case "$1" in
+    configure)
+        if [ "x"$2 != "x" ]; then
+            # we are doing an upgrade
+            exit 0
+        fi
+        chown www-data /var/testlink/upload_area /var/testlink/templates_c /var/log/testlink 
+    ;;
+    
+    abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+    
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+exit 0

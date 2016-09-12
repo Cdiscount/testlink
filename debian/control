@@ -1,0 +1,16 @@
+Source: testlink
+Section: misc
+Priority: optional
+Maintainer: Rémi BUISSON <remi.buisson@cdiscount.com>
+Build-Depends: debhelper (>= 4.0.0)
+Standards-Version: 3.9.5
+
+Package: testlink
+Architecture: any
+Depends: ${misc:Depends}, php5, php5-mysql, php5-gd, php5-curl, php5-ldap
+Suggests: nginx, mysql-server, php5-fpm
+Description:  TestLink is a web based test management and test execution system.
+              It enables quality assurance teams to create and manage their test    
+              cases as well as to organize them into test plans. These test plans 
+              allow team members to execute test cases and track test results 
+              dynamically.
